@@ -13,13 +13,13 @@ public class ApinmentController {
 	
 	@Autowired
 	ApoinmentService as;
-	@PostMapping("AddApoinment")
+	@PostMapping("addApoinment")
 	String addApoinment(Apoinment a) {
 		as.addApoinment(a);
 		return "Apoinment booked";
 		
 	}
-	@GetMapping("DeleteApoinment/{id}")
+	@GetMapping("deleteApoinment/{id}")
 
 		String deleteApoinment(int id){
 		
