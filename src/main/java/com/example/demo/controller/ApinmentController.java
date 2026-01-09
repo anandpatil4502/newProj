@@ -13,7 +13,7 @@ public class ApinmentController {
 	
 	@Autowired
 	ApoinmentService as;
-	@PostMapping("AddApoinment")
+	@PostMapping("AddApoinments")
 	String addApoinment(Apoinment a) {
 		as.addApoinment(a);
 		return "Apoinment booked";
